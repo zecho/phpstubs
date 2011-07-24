@@ -5,7 +5,7 @@ class GearmanWorker
 
   /**
    * Constructor
-   * */
+   */
   public function __construct()
   {
     

@@ -250,14 +250,25 @@ class GearmanClient
   }
 
   /**
+   * Get the status for the running task
+   * 
    * @return  array
    */
   public function doStatus()
   {
     
   }
+  /**
+   * Send data to all job servers to see if they echo it back
+   * //COMMENTED AS RESERVED WORD!!! 
+   */
+//  public function 'echo'() {
+//  
+//  }
 
   /**
+   * Returns an error string for the last error encountered
+   * 
    * @return  string
    */
   public function error()
@@ -266,6 +277,8 @@ class GearmanClient
   }
 
   /**
+   * Get an errno value
+   * 
    * @return  int
    */
   public function getErrno()
@@ -274,7 +287,8 @@ class GearmanClient
   }
 
   /**
-   *
+   * Get the status of a background job
+   * 
    * @param string $job_handle 
    * 
    * @return  array
@@ -285,7 +299,8 @@ class GearmanClient
   }
 
   /**
-   *
+   * Remove client options
+   * 
    * @param int $options 
    * 
    * @return  bool
@@ -296,6 +311,8 @@ class GearmanClient
   }
 
   /**
+   * Get the last Gearman return code
+   * 
    * @return  int
    */
   public function returnCode()
@@ -304,6 +321,8 @@ class GearmanClient
   }
 
   /**
+   * Run a list of tasks in parallel
+   * 
    * @return  bool
    */
   public function runTasks()
@@ -312,7 +331,9 @@ class GearmanClient
   }
 
   /**
-   *
+   * Callback function when there is a data packet for a task (deprecated)
+   * 
+   * @deprecated
    * @param callback $callback 
    * 
    * @return  bool
@@ -323,6 +344,7 @@ class GearmanClient
   }
 
   /**
+   * Set a function to be called on task completion
    * 
    * @param callback $callback
    * 
@@ -334,6 +356,8 @@ class GearmanClient
   }
 
   /**
+   * Set application context
+   * 
    * @param string $context
    * 
    * @return  bool
@@ -344,6 +368,8 @@ class GearmanClient
   }
 
   /**
+   * Set a callback for when a task is queued
+   * 
    * @param string $callback
    * 
    * @return  bool
@@ -354,6 +380,10 @@ class GearmanClient
   }
 
   /**
+   * Set application data (deprecated)
+   * 
+   * @deprecated
+   * 
    * @param string $data
    * 
    * @return  bool
@@ -364,6 +394,8 @@ class GearmanClient
   }
 
   /**
+   * Callback function when there is a data packet for a task
+   * 
    * @param callback $callback
    * 
    * @return  bool
@@ -374,6 +406,8 @@ class GearmanClient
   }
 
   /**
+   * Set a callback for worker exceptions
+   * 
    * @param callback $callback
    * 
    * @return  bool
@@ -384,6 +418,8 @@ class GearmanClient
   }
 
   /**
+   * Set callback for job failure
+   * 
    * @param callback $callback
    * 
    * @return  bool
@@ -394,6 +430,8 @@ class GearmanClient
   }
 
   /**
+   * Set client options
+   * 
    * @param int $options
    * 
    * @return  bool
@@ -404,6 +442,7 @@ class GearmanClient
   }
 
   /**
+   * Set a callback for collecting task status
    * 
    * @param callback $callback
    * 
@@ -415,6 +454,8 @@ class GearmanClient
   }
 
   /**
+   * Set socket I/O activity timeout
+   * 
    * @param int $timeout
    * 
    * @return  bool
@@ -425,6 +466,8 @@ class GearmanClient
   }
 
   /**
+   * Set a callback for worker warnings
+   * 
    * @param callback $callback
    * 
    * @return  bool
@@ -435,6 +478,8 @@ class GearmanClient
   }
 
   /**
+   * Set a callback for accepting incremental data updates
+   * 
    * @param callback $callback
    * 
    * @return  bool
@@ -445,6 +490,8 @@ class GearmanClient
   }
 
   /**
+   * Get current socket I/O activity timeout value
+   * 
    * @return  int
    */
   public function timeout()
