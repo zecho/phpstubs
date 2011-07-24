@@ -7,9 +7,9 @@ class GearmanClient
   /**
    * Add client options
    * 
-   * @param int $options 
+   * @param int $options The options to add
    * 
-   * @return  bool
+   * @return bool Always returns TRUE.
    */
   public function addOptions($options)
   {
